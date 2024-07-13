@@ -61,8 +61,8 @@ export default function Skills() {
 			id="skills"
 			className="bg-white rounded-lg shadow-md flex items-center justify-center min-h-screen"
 		>
-			<div className="text-center max-w-2xl w-full mx-auto">
-				<h2 className="text-4xl font-bold text-amber-900 mb-3">Skills</h2>
+			<div className="text-center max-w-2xl w-full mx-auto my-5">
+				<h2 className="text-4xl font-bold text-amber-950 mb-3">Skills</h2>
 				<hr className="mb-5 border border-neutral-300" />
 				<h2 className="text-2xl font-bold text-amber-600 mb-6">Technical</h2>
 				<div className="grid grid-cols-4 gap-4 my-4 justify-items-center text-orange-800">
