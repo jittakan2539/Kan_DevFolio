@@ -1,13 +1,39 @@
-import Profile from "../../src/assets/images/Kan_pic.png";
+import About from "../../src/assets/images/About_pic.jpg";
+
 function AboutPage() {
 	return (
-		<header className="flex flex-col md:flex-row justify-center items-center gap-10 my-10">
-			<img
-				src={Profile}
-				alt="Kan's Image"
-				className="object-cover w-80 h-80  md:w-96 md:h-96 rounded-full "
-			/>
-			<section className="flex flex-col gap-3 w-96">sdsd</section>
+		<header className="flex flex-col md:flex-row justify-center items-start gap-10 my-10">
+			<div className="w-96 h-{400px} overflow-hidden rounded-2xl hover">
+				<img
+					src={About}
+					alt="Kan's Image"
+					className="object-cover w-full h-full hover:scale-125 duration-1000"
+				/>
+			</div>
+
+			<section className="flex flex-col gap-3 w-[500px]">
+				<h1 className="text-5xl font-bold text-amber-700">About me</h1>
+				<p className="text-xl italic ">
+					&quot;Always finding the new horizon.&quot;
+				</p>
+				<p className="text-xl">
+					Nice to see you again! I'm Kan Jittapramoulboon. A passionate web
+					developer/designer with backgrounds in animation and design. I am a
+					curious person and a coracious reader. In my free time, you will find
+					me either reading or watching some documentaries
+				</p>
+				<p className="text-xl">
+					My passion is to create something that could improve people's life.
+					And I realize that I could apply my skills in software development and
+					UX design to make everyone's life easier.
+				</p>
+				<p className="text-xl">
+					I have a hand-on experience in Generation's Thailand Bootcamp, where I
+					got to push my limit as an artist-turn-software developer. At the end
+					of the day, however overwhelming the problems are, I am confident that
+					I am capable of making it through.
+				</p>
+			</section>
 		</header>
 	);
 }

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Image from "../assets/images/hero_illust.png";
+import notFound from "../assets/images/notFound.png";
 import { Link } from "react-router-dom";
 
-export default function OpenPage() {
+export default function NotFoundPage() {
 	const [imageLoaded, setImageLoaded] = useState(false);
 
 	const handleImageLoad = () => {
@@ -13,9 +13,9 @@ export default function OpenPage() {
 		<section className="relative h-screen w-full flex flex-col justify-center">
 			<img
 				id="p"
-				src={Image}
+				src={notFound}
 				alt="Kan's opening Illustration"
-				className={`object-cover object-bottom md:object-center w-full h-full ${
+				className={`object-cover object-right-top md:object-center w-full h-full ${
 					imageLoaded
 						? "opacity-100 transition-opacity duration-1000"
 						: "opacity-0"
@@ -31,20 +31,22 @@ export default function OpenPage() {
 						: "opacity-0"
 				}`}
 			>
-				<div className="bg-white py-10 ox-10 md:px-16 text-center flex-col justify-center items-start">
+				<div className="bg-white py-10 px-16 text-center flex-col justify-center items-start">
 					<p
-						className={`text-amber-700 text-2xl md:text-4xl lg:text-6xl text-center${
+						className={`text-amber-700 text-3xl md:text-4xl lg:text-4xl text-center font-thin ${
 							imageLoaded
 								? "opacity-100 transform translate-y-0 transition-transform duration-1000 delay-500"
 								: " transform translate-y-10"
 						}`}
 					>
-						KAN JITTAPRAMOULBOON{" "}
-						<span className="block md:inline text-amber-900">| PORTFOLIO</span>
+						404{" "}
+						<span className="block md:inline text-neutral-500 text-xl lg:text-3xl">
+							| Oops! Seems like your URL does not exist.
+						</span>
 					</p>
 					<Link to="/home">
-						<button className=" text-3xl bg-stone-500 text-white border-2 border-white hover:bg-white hover:border-neutral-900 hover:text-black mt-4 px-10 py-2 rounded-lg">
-							Click
+						<button className=" text-xl lg:text-3xl bg-stone-500 text-white border-2 border-white hover:bg-white hover:border-neutral-900 hover:text-black mt-4 px-10 py-2 rounded-lg">
+							Home
 						</button>
 					</Link>
 				</div>
