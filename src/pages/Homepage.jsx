@@ -1,3 +1,8 @@
+import Intro from "../components/Home/Intro.jsx";
 export default function Homepage() {
-	return <div></div>;
+	return (
+		<main className="bg-neutral-500">
+			<Intro />
+		</main>
+	);
 }

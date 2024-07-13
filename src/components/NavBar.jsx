@@ -7,10 +7,10 @@ const Nav = () => {
 			<nav className="flex justify-between p-10">
 				<Link to="/home">
 					{" "}
-					<img src={Logo} alt="Elviro Logo" className="w-48" />
+					<img src={Logo} alt="Elviro Logo" className="w-36" />
 				</Link>
 
-				<ul className="flex flex-row justify-end p-5 mx-6 gap-11 text-2xl font-semibold">
+				<ul className="flex items-start  mx-6 gap-11 text-2xl font-semibold">
 					<li>
 						<Link to="/home/">Home</Link>
 					</li>
