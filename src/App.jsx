@@ -6,6 +6,7 @@ import ContactPage from "./pages/ContactPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import Footer from "./components/Footer.jsx";
 import NavBar from "./components/NavBar.jsx";
+import NotFoundPage from "./pages/NotFoundPage.jsx";
 
 const App = () => {
 	const router = createBrowserRouter([
@@ -40,6 +41,14 @@ const App = () => {
 					element: <ContactPage />,
 				},
 			],
+		},
+		{
+			path: "*",
+			element: (
+				<>
+					<NotFoundPage />
+				</>
+			),
 		},
 	]);
 
