@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import OpenPage from "./pages/OpenPage.jsx";
-import HomePage from "./pages/HomePage.jsx";
+import Home from "./pages/Home.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import Footer from "./components/Footer.jsx";
@@ -30,7 +30,7 @@ const App = () => {
 			children: [
 				{
 					path: "",
-					element: <HomePage />,
+					element: <Home />,
 				},
 				{
 					path: "about",
