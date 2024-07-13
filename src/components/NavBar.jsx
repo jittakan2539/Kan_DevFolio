@@ -4,7 +4,7 @@ import Logo from "../assets/images/Logo_Kan.png";
 const Nav = () => {
 	return (
 		<>
-			<nav className="flex justify-between p-10">
+			<nav className="flex justify-between p-10 py-5 bg-white">
 				<Link to="/home">
 					{" "}
 					<img src={Logo} alt="Elviro Logo" className="w-36" />
