@@ -4,6 +4,7 @@ import OpenPage from "./pages/OpenPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
+import Footer from "./components/Footer.jsx";
 import NavBar from "./components/NavBar.jsx";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
 				<>
 					<NavBar />
 					<Outlet />
+					<Footer />
 				</>
 			),
 			children: [
