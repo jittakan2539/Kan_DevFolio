@@ -1,13 +1,23 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
-import HomePage from "./pages/Homepage.jsx";
-import ContactPage from "./pages/Homepage.jsx";
-import AboutPage from "./pages/Homepage.jsx";
+import OpenPage from "./pages/OpenPage.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
 import NavBar from "./components/NavBar.jsx";
+
 const App = () => {
 	const router = createBrowserRouter([
 		{
 			path: "/",
+			element: (
+				<>
+					<OpenPage />
+				</>
+			),
+		},
+		{
+			path: "/home",
 			element: (
 				<>
 					<NavBar />
@@ -16,15 +26,15 @@ const App = () => {
 			),
 			children: [
 				{
-					path: "/",
+					path: "",
 					element: <HomePage />,
 				},
 				{
-					path: "/about",
+					path: "about",
 					element: <AboutPage />,
 				},
 				{
-					path: "/contact",
+					path: "contact",
 					element: <ContactPage />,
 				},
 			],
