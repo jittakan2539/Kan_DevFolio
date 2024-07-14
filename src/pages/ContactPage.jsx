@@ -43,7 +43,7 @@ export default function ContactPage() {
 				Or download my resume.
 			</p>
 			<a
-				href="../../assets/CV_Kan_Jittapramoulboon_Fullstack.pdf"
+				href="https://drive.google.com/file/d/1S6brEASCpmIUI-TCkUwKBuiKyZyD6k11/view?usp=sharing"
 				download
 				className=" text-3xl bg-amber-700 text-white border-2 border-white hover:bg-white hover:border-neutral-900 hover:text-black  px-10 py-2 rounded-lg"
 			>

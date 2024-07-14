@@ -44,8 +44,7 @@ export default function Intro() {
 						<br className="block md:hidden" /> draw and speak 4 languages.&quot;
 					</p>
 					<a
-						href="../../assets/CV_Kan_Jittapramoulboon_Fullstack.pdf"
-						download
+						href="https://drive.google.com/file/d/1S6brEASCpmIUI-TCkUwKBuiKyZyD6k11/view?usp=sharing"
 						className="text-center text-lg md:text-3xl w-40 bg-amber-700 text-white border-2 border-white hover:bg-white hover:border-neutral-900 hover:text-black px-6 py-2 rounded-lg inline-block mt-4"
 						style={{ minWidth: "120px" }}
 					>
