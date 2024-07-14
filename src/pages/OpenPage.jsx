@@ -9,6 +9,10 @@ export default function OpenPage() {
 		setImageLoaded(true);
 	};
 
+	const handleContextMenu = (event) => {
+		event.preventDefault();
+	};
+
 	return (
 		<section className="relative h-screen w-full flex flex-col justify-center">
 			<img
@@ -22,6 +26,7 @@ export default function OpenPage() {
 				}`}
 				draggable="false"
 				onLoad={handleImageLoad}
+				onContextMenu={handleContextMenu}
 			/>
 
 			<section

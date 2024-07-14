@@ -51,7 +51,7 @@
 	}
 
 	.button {
-		@apply text-3xl bg-stone-500 text-white border-2 border-white hover:bg-white hover:border-neutral-900 hover:text-black  rounded-lg;
+		@apply text-3xl bg-stone-500 text-white border-2 border-white hover:bg-white hover:border-neutral-900 hover:text-black rounded-lg;
 	}
 
 	@keyframes openLogin {
