@@ -61,14 +61,14 @@ export default function Skills() {
 			id="skills"
 			className="bg-white rounded-lg shadow-md flex items-center justify-center min-h-screen"
 		>
-			<div className="text-center max-w-2xl w-full mx-auto my-5">
+			<div className="text-center max-w-2xl w-full mx-auto my-5 ">
 				<h2 className="text-4xl font-bold text-amber-950 mb-3">Skills</h2>
 				<hr className="mb-5 border border-neutral-300" />
 				<h2 className="text-2xl font-bold text-amber-600 mb-6">Technical</h2>
-				<div className="grid grid-cols-4 gap-4 my-4 justify-items-center text-orange-800">
+				<div className="grid grid-cols-4 gap-4 my-4 text-orange-800">
 					{skills.map(({ id, Component, label }) => (
 						<div
-							className="text-5xl text-goldDesert transition-all duration-300 transform hover:scale-110 hover:text-darkDesert"
+							className="text-4xl md:text-5xl transition-all duration-300 transform hover:scale-110 hover:text-amber-500 flex flex-col items-center"
 							key={id}
 						>
 							<Component />
@@ -77,10 +77,10 @@ export default function Skills() {
 					))}
 				</div>
 				<h2 className="text-2xl font-bold text-amber-600 mt-6 mb-6">Design</h2>
-				<div className="grid grid-cols-4 gap-4 my-4 justify-items-center text-orange-800">
+				<div className="grid grid-cols-4 gap-4 my-4 text-orange-800">
 					{designSkills.map(({ id, Component, label }) => (
 						<div
-							className="text-5xl text-goldDesert transition-all duration-300 transform hover:scale-110 hover:text-darkDesert"
+							className="text-4xl md:text-5xl transition-all duration-300 transform hover:scale-110 hover:text-amber-800 flex flex-col items-center"
 							key={id}
 						>
 							<Component />

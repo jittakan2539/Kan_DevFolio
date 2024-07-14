@@ -6,7 +6,7 @@ export default function Projects() {
 	return (
 		<section className="my-5">
 			<h2 className="text-4xl font-bold text-amber-950 mb-3">Projects</h2>
-			<div className="p-10 flex justify-center gap-20">
+			<div className="p-10 flex flex-col md:flex-row justify-center gap-5 md:gap-20">
 				<ProductCard
 					image={Elviro}
 					title="Elviro: E-Commerce Web App"
@@ -24,7 +24,7 @@ export default function Projects() {
 				/>
 				<ProductCard
 					image={CRUD}
-					title="User Registration Web App"
+					title="User Registration"
 					description="A web application created for registering users. The app is separated into admin section, where user infomation can be viewed in user section."
 					techStack={["HTML", "JavaScript", "React"]}
 					liveLink="https://10-kan-react.vercel.app/"
