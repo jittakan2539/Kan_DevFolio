@@ -1,4 +1,5 @@
 import { FaLinkedin, FaMobile, FaRegEnvelope } from "react-icons/fa";
+
 export default function ContactPage() {
 	return (
 		<main className="flex flex-col items-center my-5 gap-3">

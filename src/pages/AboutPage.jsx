@@ -1,13 +1,24 @@
 import About from "../../src/assets/images/About_pic.jpg";
+import { useState } from "react";
 
 function AboutPage() {
+	const [imageLoaded, setImageLoaded] = useState(false);
+
+	const handleImageLoad = () => {
+		setImageLoaded(true);
+	};
 	return (
 		<header className="flex flex-col md:flex-row justify-center items-center md:items-start gap-10 my-10">
-			<div className="w-64 md:w-96 md:h-{400px} overflow-hidden rounded-2xl hover">
+			<div
+				className={`${
+					imageLoaded ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+				} transition-all duration-1000 w-64 md:w-96 md:h-{400px} overflow-hidden rounded-2xl hover`}
+			>
 				<img
 					src={About}
 					alt="Kan's Image"
 					className="object-cover w-full h-full scale-125 md:scale-100 hover:scale-125 duration-1000"
+					onLoad={handleImageLoad}
 				/>
 			</div>
 

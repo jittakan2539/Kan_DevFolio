@@ -1,19 +1,37 @@
 import Profile from "../../assets/images/Kan_pic.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Intro() {
+	const [imageLoaded, setImageLoaded] = useState(false);
+
+	const handleImageLoad = () => {
+		setImageLoaded(true);
+	};
+
 	const handleContextMenu = (event) => {
 		event.preventDefault();
 	};
 	return (
-		<header className="flex flex-col items-center my-10">
+		<header
+			className={`flex flex-col items-center my-10 ${
+				imageLoaded ? "opacity-100 " : "opacity-0 "
+			} transition-all duration-1000`}
+		>
 			<section className="flex flex-col md:flex-row justify-center items-center gap-10 my-10">
-				<div className="overflow-hidden w-60 h-60 md:w-96 md:h-96 rounded-full">
+				<div
+					className={`overflow-hidden w-60 h-60 md:w-96 md:h-96 rounded-full ${
+						imageLoaded
+							? "opacity-100 translate-x-0"
+							: "opacity-0 translate-x-10"
+					} transition-all duration-1000`}
+				>
 					<img
 						src={Profile}
 						alt="Kan's Image"
-						className="object-cover w-full h-full transform transition-transform duration-1000 hover:scale-125"
+						className=" object-cover w-full h-full transform transition-transform duration-1000 hover:scale-125"
 						onContextMenu={handleContextMenu}
+						onLoad={handleImageLoad}
 					/>
 				</div>
 
