@@ -1,12 +1,21 @@
 import ProductCard from "./ProductCard";
 import Elviro from "../../assets/images/project01-elviro/elviro-desktop.jpg";
 import CRUD from "../../assets/images/project02_CRUD Generation/Generation-image.jpg";
+import Saladmaker from "../../assets/images/projects/project03_salad-maker.jpg";
 
 export default function Projects() {
 	return (
 		<section className="my-5">
 			<h2 className="text-4xl font-bold text-amber-950 mb-3">Projects</h2>
 			<div className="p-10 flex flex-col md:flex-row justify-center gap-5 md:gap-20">
+				<ProductCard
+					image={Saladmaker}
+					title="Salad Maker Web App"
+					description="A web app that lets you choose your favorite ingredients for your salad recipes"
+					techStack={["Next.js", "Express.js", "MongoDB"]}
+					liveLink="https://salad-maker-psi.vercel.app/"
+					codeLink="https://github.com/jittakan2539/salad-maker"
+				/>
 				<ProductCard
 					image={Elviro}
 					title="Elviro: E-Commerce Web App"
