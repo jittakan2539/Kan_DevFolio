@@ -1,7 +1,7 @@
 import ProductCard from "./ProductCard";
 import Elviro from "../../assets/images/project01-elviro/elviro-desktop.jpg";
 import CRUD from "../../assets/images/project02_CRUD Generation/Generation-image.jpg";
-import Saladmaker from "../../assets/images/projects/project03_salad-maker.jpg";
+import Saladmaker from "../../assets/images/projects/project03_salad-maker.png";
 
 export default function Projects() {
 	return (
@@ -11,7 +11,7 @@ export default function Projects() {
 				<ProductCard
 					image={Saladmaker}
 					title="Salad Maker Web App"
-					description="A web app that lets you choose your favorite ingredients for your salad recipes"
+					description="A web app that lets you mix and match your favorite ingredients for your new salad recipes"
 					techStack={["Next.js", "Express.js", "MongoDB"]}
 					liveLink="https://salad-maker-psi.vercel.app/"
 					codeLink="https://github.com/jittakan2539/salad-maker"
