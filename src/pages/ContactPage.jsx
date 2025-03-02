@@ -47,14 +47,14 @@ export default function ContactPage() {
 			</section>
 			<hr className="border border-neutral-400 w-3/4 md:w-1/4 mt-10" />
 			<p className="text-center text-2xl md:text-3xl text-neutral-500">
-				Or download my resume.
+				Or download my résumé.
 			</p>
 			<a
 				href="https://drive.google.com/file/d/1S6brEASCpmIUI-TCkUwKBuiKyZyD6k11/view?usp=sharing"
 				download
 				className=" text-3xl bg-amber-700 text-white border-2 border-white hover:bg-white hover:border-neutral-900 hover:text-black  px-10 py-2 rounded-lg"
 			>
-				Resume
+				Résumé
 			</a>
 		</main>
 	);
