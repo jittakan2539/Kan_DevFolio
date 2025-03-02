@@ -25,8 +25,11 @@ export default function ContactPage() {
 					<a href="mailto:jittakan2539@gmail.com" target="_blank">
 						<FaRegEnvelope className="text-red-800 text-3xl bg-sky" />
 					</a>
-					<h2 className="text-xl md:text-2xl font-normal ml-6e  text-neutral-600">
-						jittakan2539@gmail.com
+					<h2 className="text-xl md:text-2xl font-normal ml-6e text-neutral-600 hover:text-orange-800">
+						<a href="mailto:jittakan2539@gmail.com">
+							jittakan2539@gmail.com
+						</a>
+						
 					</h2>
 				</section>
 
@@ -34,8 +37,11 @@ export default function ContactPage() {
 					<a href="mailto:jittakan2539@gmail.com" target="_blank">
 						<FaLinkedin className="text-3xl text-blue-800" />
 					</a>
-					<h2 className="text-xl md:text-2xl font-normal ml-6e  text-neutral-600">
-						Kan Jittapramoulboon
+					<h2 className="text-xl md:text-2xl font-normal ml-6e text-neutral-600 hover:text-orange-800">
+						<a href="https://www.linkedin.com/in/kan-jittapramoulboon/" target="_blank">
+							Kan Jittapramoulboon
+						</a>
+						
 					</h2>
 				</section>
 			</section>
