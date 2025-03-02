@@ -6,7 +6,7 @@ import Angular from "../../assets/images/project04-angular/Angular.png";
 
 export default function Projects() {
 	return (
-		<section className="my-5">
+		<section className="my-5 flex flex-col justify-center">
 			<h2 className="text-4xl font-bold text-amber-950 mb-3">Projects</h2>
 			<div className="p-10 flex flex-col md:flex-row justify-center gap-5 md:gap-20">
 				<ProductCard
@@ -49,6 +49,7 @@ export default function Projects() {
 					codeLink="https://github.com/jittakan2539/10-Kan-react"
 				/>
 			</div>
+			<p className="text-center text-lg text-orange-800 font-semibold">Please contact for interview if you would like to see more projects I have worked for clients.</p>
 		</section>
 	);
 }
