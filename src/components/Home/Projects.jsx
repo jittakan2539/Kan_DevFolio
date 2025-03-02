@@ -2,12 +2,21 @@ import ProductCard from "./ProductCard";
 import Elviro from "../../assets/images/project01-elviro/elviro-desktop.jpg";
 import CRUD from "../../assets/images/project02_CRUD Generation/Generation-image.jpg";
 import Saladmaker from "../../assets/images/projects/project03_salad-maker.png";
+import Angular from "../../assets/images/project04-angular/Angular.png";
 
 export default function Projects() {
 	return (
 		<section className="my-5">
 			<h2 className="text-4xl font-bold text-amber-950 mb-3">Projects</h2>
 			<div className="p-10 flex flex-col md:flex-row justify-center gap-5 md:gap-20">
+				<ProductCard
+					image={Angular}
+					title="Shop with Ease App"
+					description="A simple e-commerce web app for managing a shop with ease, created with Angular. Users can add new products, add items to the cart with automatic total calculation, and quickly determine change. Note: Data resets upon page refresh as there is no backend storage."
+					techStack={["Angular19"]}
+					liveLink="https://angular-e-commerce-tau.vercel.app/"
+					codeLink="https://github.com/jittakan2539/Angular_e-commerce"
+				/>
 				<ProductCard
 					image={Saladmaker}
 					title="Salad Maker Web App"
