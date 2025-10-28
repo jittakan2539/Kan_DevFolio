@@ -50,7 +50,7 @@ export default function ContactPage() {
 				Or download my résumé.
 			</p>
 			<a
-				href="https://drive.google.com/file/d/1S6brEASCpmIUI-TCkUwKBuiKyZyD6k11/view?usp=sharing"
+				href="https://drive.google.com/file/d/1BhEs8bVmYo17Z8NEJfd7X2EZGjfA2ie-/view?usp=sharing"
 				download
 				className=" text-3xl bg-amber-700 text-white border-2 border-white hover:bg-white hover:border-neutral-900 hover:text-black  px-10 py-2 rounded-lg"
 			>
