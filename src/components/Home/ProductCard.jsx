@@ -40,14 +40,17 @@ const ProductCard = ({
 				>
 					Live Preview
 				</a>
-				<a
-					href={codeLink}
-					target="_blank"
-					className="flex items-center  gap-2 text-xl text-orange-800 hover:text-orange-600 px-4 py-2"
-				>
-					<FaGithub className="hidden md:block h-6 text-gray-500 hover:text-gray-800" />
-					<p className="text-lg md:text-xl hover:text-orange-600">View Code</p>
-				</a>
+				{codeLink && ( 
+					<a
+						href={codeLink}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="flex items-center gap-2 text-xl text-orange-800 hover:text-orange-600 px-4 py-2"
+					>
+						<FaGithub className="hidden md:block h-6 text-gray-500 hover:text-gray-800" />
+						<p className="text-lg md:text-xl hover:text-orange-600">View Code</p>
+					</a>
+				)}
 			</div>
 		</section>
 	);
